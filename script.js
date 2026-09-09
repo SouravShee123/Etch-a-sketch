@@ -19,7 +19,7 @@ function createGrid(size) {
 
             // handles trailing effect
             square.addEventListener("mouseenter",()=>{
-                square.style.backgroundColor = "black"
+                square.style.backgroundColor = getRandomColor(); //  trailing effect gets a random color instead of one single color
             })
             container.appendChild(square); 
     }
@@ -41,3 +41,12 @@ button.addEventListener("click",()=>{
         createGrid(sideLength);
     }
 })
+
+// generating a random color
+function getRandomColor (){
+    const r = Math.floor(Math.random()*256); // getting a random value from 0 to 255 (ex: 24)
+    const g = Math.floor(Math.random()*256); // (ex: 35)
+    const b = Math.floor(Math.random()*256); // (ex: 245)
+    
+    return `rgb(${r},${g},${b})`; //  rgb(24,35,245)
+}
