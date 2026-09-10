@@ -1,8 +1,8 @@
 .grid-container {
   display: flex;
   background-color: black;
-  height: 1600px;
-  width: 1600px;
+  height: 1000px;
+  width: 1000px;
   flex-wrap: wrap; /* organizes the divs in a square i.e 16X16 in this case*/
 }
 
@@ -13,4 +13,3 @@
   box-sizing: border-box;
   border: 1px solid black;  
 }
-
